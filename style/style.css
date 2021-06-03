@@ -1,17 +1,34 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    height: 900px;
-    background-color: cadetblue;
-    font-family: 'Nerko One', cursive;
-}
-.container h1{
+body{
+    font-family: "Nerko One", cursive;
+    font-size: 2.5em;
     text-align: center;
+    background-color: cadetblue;
     color: white;
-    padding: 20px;
-    font-size: 4em;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    max-width: 1200px;
+    margin:auto
+}
+
+.row{
+    margin-bottom: 25px;
+}
+
+.collum{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    
 }
